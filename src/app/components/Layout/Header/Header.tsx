@@ -8,6 +8,7 @@ import logo from "@/../public/logocarioca digital.png";
 // import MobileNavbar from "./MobileNavbar";
 // import MobileNavbarButton from "./MobileNavbarButton";
 import { useState } from "react";
+import Container from "../Container/Container";
 // import Login from "./login/Login";
 
 const Header = () => {
@@ -21,12 +22,6 @@ const Header = () => {
             <Image className={styles.img} src={logo} alt="Logo" />
           </Link>
         </div>
-        {/* <Links />
-        <MobileNavbarButton setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
-        <MobileNavbar setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
-        <div className={styles.loginDesktop}>
-          <Login />
-        </div> */}
       </div>
     </header>
   );
