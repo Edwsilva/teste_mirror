@@ -1,21 +1,25 @@
 .header {
-  height: 100px;
+  height: 50px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   position: fixed;
   left: 0;
   top: 0;
   width: 100%;
-  background: linear-gradient(90deg, #01b0db 0%, #09b78c 80%);
+  background-color: white;
   z-index: 999;
 }
 
 .container {
+  /* height: 50px; */
+  /* position: absolute; */
+  margin-top: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
   max-width: 1366px;
-  margin: 0 auto;
+  /* margin: 130 auto; */
   height: inherit;
+  background-color: rgb(243, 247, 244);
 }
 
 .logoLink {
@@ -31,8 +35,8 @@
 }
 
 .img {
-  width: 200px;
-  height: auto;
+  width: 30px;
+  height: 30px;
 }
 
 .loginDesktop {

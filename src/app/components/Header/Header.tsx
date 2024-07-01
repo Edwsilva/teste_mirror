@@ -21,6 +21,9 @@ const Header = () => {
             <Image className={styles.img} src={logo} alt="Logo" />
           </Link>
         </div>
+        <div className={styles.logoutButton}>
+          <span className={styles.spanContainer}>Olá Edwilson</span>
+        </div>
         {/* <Links />
         <MobileNavbarButton setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
         <MobileNavbar setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
