@@ -1,0 +1,61 @@
+.contentContainer{
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--text);
+  box-shadow: 0 4px 4px 0 var(--text);
+}
+
+.title{
+  margin: 25px 0;
+  text-align: center;
+  font-size: 1.2rem;
+  color: #212529;
+}
+
+.mainContainer {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: start;
+  gap: 10px;
+  max-width: 90%;
+  margin: 20px auto 50px auto;
+}
+
+.iconContainer{
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.arrowIconRight {
+  color: var(--primary);
+  font-size: 3rem;
+}
+
+.card {
+  margin-top: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+  gap: 10px;
+  font-size: .9rem;
+}
+
+.icon {
+  font-size: 3rem;
+  color: #1bc5a0;
+  align-items: center;
+}
+
+.content {
+  display: flex;
+  flex-direction: column; /* Organiza os itens verticalmente */
+  align-items: center; /* Centraliza os itens horizontalmente */
+  justify-content: center; /* Centraliza os itens verticalmente */
+}
+
+.text{
+  color: #7B7B7B;
+}
