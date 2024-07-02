@@ -1,3 +1,4 @@
+'use client'
 import { ComponentPropsWithoutRef } from 'react';
 import styles from './button.module.css';
 
