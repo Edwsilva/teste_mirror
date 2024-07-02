@@ -1,8 +1,11 @@
+import Container from '@/app/components/Layout/Container/Container'
 import React from 'react'
 
 const GerenciarEmpresas = () => {
   return (
-    <h1>Gerenciar Empresas</h1>
+    <Container>
+      <h1>Gerenciar Empresas</h1>
+    </Container>
   )
 }
 
