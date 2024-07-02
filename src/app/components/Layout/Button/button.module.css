@@ -1,0 +1,40 @@
+.default{
+  outline: none;
+  border: none;
+  padding: 4px 9px;
+  border-radius: 3px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.primary{
+  background-color: var(--primary);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+.secondary{
+  background-color: var(--secondary);
+  color: var(--secondary);
+  border: 1px solid var(--secondary);
+}
+
+.error{
+  background-color: var(--error);
+  color: var(--error);
+  border: 1px solid var(--error);
+}
+
+.filled{
+  color: white;
+}
+
+.outlined{
+  background-color: white;
+}
+
+.no-outlined{
+  border: none;
+  background-color: transparent;
+  padding: 5px 10px;
+}
