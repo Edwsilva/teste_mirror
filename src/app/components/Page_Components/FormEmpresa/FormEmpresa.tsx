@@ -2,7 +2,7 @@
 import { ChangeEvent, useState } from "react";
 import styles from "./form.module.css";
 // import Button from "../button/Button";
-import { formatCNPJ, validateCNPJ } from "./../../utils/validate";
+import { formatCNPJ, validateCNPJ } from "../../../utils/validate";
 
 const FormEmpresa = () => {
   const [textField, setTextField] = useState("");
