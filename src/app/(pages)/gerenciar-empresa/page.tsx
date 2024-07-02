@@ -1,4 +1,4 @@
-import Button from '@/app/components/Layout/Button/Button';
+import Button from '@/app/components/UI/Button/Button';
 import Container from '@/app/components/Layout/Container/Container'
 import React from 'react'
 
