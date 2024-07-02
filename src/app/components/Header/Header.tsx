@@ -22,7 +22,6 @@ const Header = () => {
             <Image className={styles.img} src={logo} alt="Logo" />
           </Link>
         </div>
-<<<<<<< HEAD:src/app/components/Header/Header.tsx
         <div className={styles.logoutButton}>
           <span className={styles.spanContainer}>Olá Edwilson</span>
         </div>
@@ -32,8 +31,6 @@ const Header = () => {
         <div className={styles.loginDesktop}>
           <Login />
         </div> */}
-=======
->>>>>>> dev-edu:src/app/components/Layout/Header/Header.tsx
       </div>
     </header>
   );
