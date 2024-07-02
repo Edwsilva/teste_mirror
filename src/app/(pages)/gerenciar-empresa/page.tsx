@@ -6,7 +6,7 @@ const GerenciarEmpresas = () => {
   return (
     <Container>
       <h1>Gerenciar Empresas</h1>
-      <Button bg='secondary'>cadastrar procurador</Button>
+      <Button type='outlined' bg='secondary'>cadastrar procurador</Button>
     </Container>
   )
 }

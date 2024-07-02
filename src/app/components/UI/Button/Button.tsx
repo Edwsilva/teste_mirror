@@ -9,8 +9,9 @@ type Props = {
 }
 
 const Button = ({ children, type = "filled", bg = "primary", props }: Props) => {
+  const combo = `${type}_${bg}`;
   return (
-    <button className={`${styles.default} ${styles[type]} ${styles[bg]}`}>{children}</button>
+    <button className={`${styles.default} ${styles[type]} ${styles[bg]} ${styles[combo]}`}>{children}</button>
   )
 }
 

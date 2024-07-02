@@ -6,6 +6,7 @@
   font-size: .9rem;
   font-weight: 600;
   text-transform: uppercase;
+  cursor: pointer;
 }
 
 .primary{
@@ -34,8 +35,46 @@
   background-color: white;
 }
 
+.outlined:hover{
+  color: white;
+}
+
 .no-outlined{
-  border: none;
+  border: 1px solid transparent;
   background-color: transparent;
   padding: 5px 10px;
+}
+
+/*Combos*/
+.filled_primary:hover{
+  background-color: var(--primary-dark);
+  border: 1px solid var(--primary-dark);
+}
+.filled_secondary:hover{
+  background-color: var(--secondary-dark);
+  border: 1px solid var(--secondary-dark);
+}
+.filled_error:hover{
+  background-color: var(--error-dark);
+  border: 1px solid var(--error-dark);
+}
+
+.outlined_primary:hover{
+  background-color: var(--primary);
+}
+.outlined_secondary:hover{
+  background-color: var(--secondary);
+}
+.outlined_error:hover{
+  background-color: var(--error);
+}
+
+.no-outlined_primary:hover{
+  border-color: var(--primary);
+}
+.no-outlined_secondary:hover{
+  border-color: var(--secondary);
+}
+.no-outlined_error:hover{
+  border-color: var(--error);
 }
