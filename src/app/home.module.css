@@ -6,6 +6,7 @@
 }
 
 .title {
+  /* font-family: "Open Sans", sans-serif; */
   margin: 25px 0;
   text-align: center;
   font-size: 1.2rem;
@@ -27,19 +28,27 @@
   align-items: center;
 }
 
+.iconCenter {
+  display: flex;
+}
+
+.formEmpresa {
+  padding-left: 60px;
+}
 .arrowIconRight {
   color: var(--primary);
   font-size: 3rem;
 }
 
 .card {
+  /* background-color: red; */
   margin-top: 20px;
-  text-align: left;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   flex: 1;
-  gap: 10px;
+  gap: 5px;
+  line-height: 22px;
   font-size: 0.9rem;
 }
 

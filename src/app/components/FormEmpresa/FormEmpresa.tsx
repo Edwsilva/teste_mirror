@@ -1,7 +1,7 @@
 "use client";
 import { ChangeEvent, useState } from "react";
 import styles from "./form.module.css";
-// import Button from "../button/Button";
+import Button from "../button/Button";
 import { formatCNPJ, validateCNPJ } from "@/utils/validate";
 
 const FormEmpresa = () => {
@@ -37,11 +37,7 @@ const FormEmpresa = () => {
             onChange={inputChangeHandler}
           />
         </div>
-        {/* <Button
-          p
-          text="Cadastrar"
-          props={{ type: "submit" }}
-        /> */}
+        <Button p text="INCLUIR MINHA EMPRESA" props={{ type: "submit" }} />
       </div>
     </form>
   );
