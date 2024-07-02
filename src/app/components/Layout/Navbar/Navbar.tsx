@@ -2,7 +2,6 @@
 import styles from "./navbar.module.css";
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import Container from "../Container/Container";
 import Link from "next/link";
 
 const NAVBARITEMS = [
@@ -48,7 +47,7 @@ const Navbar = () => {
         <div className={styles.dropdownContainer}>
           {NAVBARITEMS.map(item => {
             if (item.path !== pathname) {
-              return <Link href={item.path} key={item.id} className={styles.linkTitleInactive}>{item.title}</Link>
+              return <Link href={item.path} key={item.id} className={styles.linkTitleInactive} onClick={handleDropdown}>{item.title}</Link>
             }
           })}
         </div>

@@ -76,7 +76,7 @@
   text-align: right;
   border: none;
   background: none;
-  color: var(--textDark);
+  color: var(--text-dark);
   position: absolute;
   top: 35px;
   right: 5%;
@@ -87,7 +87,7 @@
   display: block;
   width: 30px;
   height: 4px;
-  background-color: var(--textDark);
+  background-color: var(--text-dark);
   margin-bottom: 5px;
   transition: transform 0.3s ease;
 }
@@ -121,20 +121,20 @@
 .profile h1 {
   font-size: 1.1rem;
   font-weight: normal;
-  color: var(--textDark);
+  color: var(--text-dark);
 }
 
 .profile p {
   opacity: 0.75;
   font-size: 0.8rem;
-  color: var(--textDark);
+  color: var(--text-dark);
 }
 
 .mobileLinks {
   display: flex;
   flex-direction: column;
   color: var(--primary);
-  color: var(--textDark);
+  color: var(--text-dark);
   margin-top: 40px;
   margin-left: 15px;
 }
@@ -176,13 +176,13 @@
   font-size: 1rem;
   font-weight: 600;
   background-color: transparent;
-  color: var(--textDark);
+  color: var(--text-dark);
   border: 1px solid white;
   border-radius: 20px;
+}
 
-  &:hover {
-    box-shadow: 0.5px 0.5px 0.5px 0.5px #898989;
-  }
+.logoutButton:hover {
+  box-shadow: 0.5px 0.5px 0.5px 0.5px #898989;
 }
 
 .spanContainer {

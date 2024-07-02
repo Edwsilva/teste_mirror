@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  color: var(--textDark);
+  color: var(--text-dark);
 }
 
 .empresaDropdownVisible {
