@@ -23,7 +23,7 @@ const Header = () => {
           </Link>
         </div>
         <div className={styles.logoutButton}>
-          <span className={styles.spanContainer}>Olá Edwilson</span>
+          <span className={styles.spanContainer}>Olámm Edwilson</span>
         </div>
         {/* <Links />
         <MobileNavbarButton setMenuOpen={setMenuOpen} menuOpen={menuOpen} />
