@@ -6,7 +6,7 @@ import Navbar from "./components/Layout/Navbar/Navbar";
 import "./globals.css";
 import Footer from "./components/Layout/Footer/Footer";
 import { roboto } from "@/utils/fonts";
-
+import SimpleSlider from "./components/Layout/Slick/SimpleSlider";
 // const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
