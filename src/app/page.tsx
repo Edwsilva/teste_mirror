@@ -46,13 +46,13 @@ export default function Home() {
 
   return (
     <Container>
-      {/* <div className={styles.contentContainer}>
+      <div className={styles.contentContainer}>
         <h3 className={styles.title}>O que é esse serviço?</h3>
-        <Servicos />
-        <SimpleSlider />
+        {/* <Servicos />
+        <SimpleSlider /> */}
+        <Example />
         <FormEmpresa />
-      </div> */}
-      <Example />
+      </div>
     </Container>
   );
 }

@@ -1,6 +1,7 @@
 import { useMediaQuery } from "react-responsive";
 import SimpleSlider from "./components/Layout/Slick/SimpleSlider";
 import Servicos from "./components/Layout/Slick/Servicos";
+import styles from "./home.module.css";
 
 const Desktop = ({ children }) => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
@@ -20,10 +21,10 @@ const Default = ({ children }) => {
 };
 
 const Example = () => (
-  <div>
-    <Desktop>
+  <div className={styles.contentContainer}>
+    {/* <Desktop>
       <Servicos />
-    </Desktop>
+    </Desktop> */}
 
     <Mobile>
       <SimpleSlider />

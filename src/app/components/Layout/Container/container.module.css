@@ -1,10 +1,10 @@
-.container{
+.container {
   max-width: 1366px;
   margin: 0 auto;
 }
 
-@media screen and (max-width: 1380px){
-  .container{
-      margin: 0 3%;
+@media screen and (max-width: 1380px) {
+  .container {
+    margin: auto;
   }
 }
