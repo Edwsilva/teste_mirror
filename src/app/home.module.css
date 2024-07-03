@@ -1,8 +1,10 @@
 .contentContainer {
   margin-top: 50px;
   border-radius: 5px;
+  padding: 20px;
   border: 1px solid var(--text);
   box-shadow: 0 4px 4px 0 var(--text);
+  background-color: var(--text-light);
 }
 
 .title {

@@ -6,6 +6,7 @@ import { MdBusinessCenter, MdFactCheck, MdAssignmentAdd } from "react-icons/md";
 import FormEmpresa from "./components/FormEmpresa/FormEmpresa";
 import SimpleSlider from "./components/Layout/Slick/SimpleSlider";
 import Servicos from "./components/Layout/Slick/Servicos";
+import Example from "./exampleResponsive";
 
 export default function Home() {
   var settings = {
@@ -45,12 +46,13 @@ export default function Home() {
 
   return (
     <Container>
-      <div className={styles.contentContainer}>
+      {/* <div className={styles.contentContainer}>
         <h3 className={styles.title}>O que é esse serviço?</h3>
         <Servicos />
         <SimpleSlider />
         <FormEmpresa />
-      </div>
+      </div> */}
+      <Example />
     </Container>
   );
 }

@@ -1,19 +1,40 @@
 .sliderContainer {
   width: 100%;
-  margin: auto;
-  padding: 15px;
+  /* margin: auto; */
+  /* padding: 110px; */
+  /* position: relative; */
 }
 
 .slide {
-  background: #eee;
-  /* padding: 40px; */
+  margin-top: 50px;
+  background-color: rgb(234, 238, 236);
+  padding: 5px;
   width: 100%;
   text-align: left;
 }
+.slick-dots {
+  display: block !important; /* Garantir que os dots sejam exibidos */
+  background-color: red;
+  position: absolute;
+  text-align: left;
+}
 
-.slick-prev:before,
-.slick-next:before {
-  color: black;
+.slick-dots li {
+  margin: 30px 35px; /* Espaçamento entre os dots */
+}
+/* Estilos personalizados para os dots */
+.slick-dots li button {
+  font-size: 20px; /* Tamanho dos dots */
+  color: blue; /* Cor dos dots */
+  border: 50px;
+  height: 200px;
+}
+.slick-dots li.slick-active {
+  color: red; /* Cor dos dots ativos */
+}
+
+.slick-dots li.slick-active button:before {
+  color: red; /* Cor dos dots ativos */
 }
 
 .contentContainer {
@@ -33,11 +54,18 @@
 
 .mainContainer {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
   align-items: start;
   gap: 10px;
   max-width: 90%;
   margin: 20px auto 50px auto;
+}
+
+.mainContainerSlider {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: start;
+  gap: 10px;
 }
 
 .iconContainer {
@@ -45,7 +73,21 @@
   display: flex;
   align-items: center;
 }
-
+.containerChevron {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.chevron {
+  height: 20px;
+  width: 20px;
+  /* background-color: red; */
+}
+.chevronLeft {
+  height: 17x;
+  width: 17px;
+  /* background-color: red; */
+}
 .iconCenter {
   display: flex;
 }
@@ -59,8 +101,9 @@
 }
 
 .card {
-  /* background-color: red; */
+  background-color: rgb(234, 238, 236);
   margin-top: 20px;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
