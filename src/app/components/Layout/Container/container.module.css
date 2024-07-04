@@ -1,10 +1,11 @@
 .container{
   max-width: 1366px;
   margin: 0 auto;
+  margin-top: 182px;
 }
 
 @media screen and (max-width: 1380px){
   .container{
-      margin: 0 3%;
+      margin: 182px 3% 0 3%;
   }
 }

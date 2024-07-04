@@ -9,7 +9,8 @@ const open_sans = Open_Sans({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Minhas Empresas",
-  description: "Serviço para emitir procurações virtuais para empresas das quais o cidadão representa legalmente",
+  description:
+    "Serviço para emitir procurações virtuais para empresas das quais o cidadão representa legalmente",
 };
 
 export default function RootLayout({
@@ -21,7 +22,6 @@ export default function RootLayout({
     <html lang="en">
       <body className={open_sans.className}>
         <Header />
-        <Navbar />
         {children}
         <Footer />
       </body>
