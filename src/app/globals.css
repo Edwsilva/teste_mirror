@@ -13,13 +13,14 @@
   --secondary-dark: #07956D;
   --text: #CCCCCC;
   --text-light: #E6E6E6;
-  --text-dark: #999999;
+  --text-dark: #7B7B7B;
   --error: #F41717;
   --error-light: #F85C5C;
   --error-dark: #C00E0E;
   --blue: #4579FB;
   --blue-light: #799CFC;
   --blue-dark: #2F57C9;
+  --black: #212529;
 }
 
 

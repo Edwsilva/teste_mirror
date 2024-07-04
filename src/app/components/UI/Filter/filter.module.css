@@ -57,11 +57,11 @@
   padding: 0;
   display: flex;
   align-items: center;
+  font-size: .9rem;
 }
 
 .selectDropdown{
   position: absolute;
-  /* display: flex; */
   flex-direction: column;
   top: 24px;
   right: 10px;

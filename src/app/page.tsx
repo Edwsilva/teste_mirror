@@ -2,7 +2,7 @@ import Container from "./components/Layout/Container/Container";
 import styles from "./home.module.css";
 import { GoArrowRight } from "react-icons/go";
 import { MdBusinessCenter, MdFactCheck, MdAssignmentAdd } from "react-icons/md";
-import FormEmpresa from "./components/Page_Components/FormEmpresa/FormEmpresa";
+import FormEmpresa from "./(pages)/gerenciar-empresa/FormEmpresa/FormEmpresa";
 
 export default function Home() {
   var settings = {
