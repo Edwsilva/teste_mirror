@@ -19,7 +19,11 @@ export interface IEmpresa {
   atividadesDisponiveis: string[];
 }
 
-const Empresas = () => {
+type Props = {
+  filter: string;
+};
+
+const Empresas = ({ filter }: Props) => {
   const { data, error, isLoading } = useSWR<IEmpresa[]>(
     `http://localhost:3001/empresas`,
     fetcher
@@ -30,9 +34,13 @@ const Empresas = () => {
 
   return (
     <div className={styles.empresas}>
-      {data.map((empresa, i) => (
-        <Empresa key={i} data={empresa} />
-      ))}
+      {data
+        .filter((empresa) =>
+          empresa.nome.toLowerCase().includes(filter.toLowerCase())
+        )
+        .map((empresa, i) => (
+          <Empresa key={i} data={empresa} />
+        ))}
     </div>
   );
 };

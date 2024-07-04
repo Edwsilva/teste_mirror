@@ -16,9 +16,16 @@ const Empresa = ({ data }: Props) => {
         <p>{data.nomeFantasia}</p>
       </div>
       <div className={styles.cardsContainer}>
-        {data.procuradores.map((procurador, i) => (
-          <Card key={i} />
-        ))}
+        {data.procuradores.flatMap((procurador) =>
+          procurador.atividades.map((atividade, index) => (
+            <Card
+              key={index}
+              atividade={atividade}
+              procurador={procurador.nome}
+              validade={procurador.periodo}
+            />
+          ))
+        )}
       </div>
     </div>
   );
