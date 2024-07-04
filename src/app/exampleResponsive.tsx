@@ -21,7 +21,7 @@ const Default = ({ children }) => {
 };
 
 const Example = () => (
-  <div className={styles.contentContainer}>
+  <div>
     {/* <Desktop>
       <Servicos />
     </Desktop> */}
@@ -30,7 +30,6 @@ const Example = () => (
       <SimpleSlider />
     </Mobile>
     <Default>
-      {" "}
       <Servicos />
     </Default>
   </div>

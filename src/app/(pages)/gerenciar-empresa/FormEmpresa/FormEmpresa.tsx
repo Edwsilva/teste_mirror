@@ -1,7 +1,7 @@
 "use client";
 import { ChangeEvent, useState } from "react";
 import styles from "./form.module.css";
-import Button from "../button/Button";
+import Button from "@/app/components/UI/button/Button";
 import { formatCNPJ, validateCNPJ } from "@/utils/validate";
 
 const FormEmpresa = () => {
@@ -24,10 +24,10 @@ const FormEmpresa = () => {
   return (
     <form className={styles.form} onSubmit={handleSubmit}>
       <div className={styles.textField}>
+        <label htmlFor="" className={styles.label}>
+          CNPJ:
+        </label>
         <div className={styles.inputContainer}>
-          <label htmlFor="" className={styles.label}>
-            CNPJ:
-          </label>
           <input
             className={styles.input}
             type="text"
@@ -36,8 +36,10 @@ const FormEmpresa = () => {
             value={textField}
             onChange={inputChangeHandler}
           />
+          <Button bg="secondary" type="filled">
+            Incluir Minha Empresa
+          </Button>
         </div>
-        <Button p text="INCLUIR MINHA EMPRESA" props={{ type: "submit" }} />
       </div>
     </form>
   );

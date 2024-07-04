@@ -9,6 +9,7 @@ import logo from "@/../public/logocarioca digital.png";
 // import MobileNavbarButton from "./MobileNavbarButton";
 import { useState } from "react";
 import Container from "../Container/Container";
+import Navbar from "../Navbar/Navbar";
 // import Login from "./login/Login";
 
 const Header = () => {

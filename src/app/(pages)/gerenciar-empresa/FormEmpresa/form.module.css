@@ -28,7 +28,6 @@
 }
 
 .form {
-  padding-left: 50px;
   margin: 40px 0;
   display: flex;
   flex-direction: column;
@@ -37,7 +36,8 @@
 
 .textField {
   display: flex;
-  align-items: flex-end;
+  flex-direction: column;
+  /* align-items: flex-end; */
   gap: 10px;
 }
 
@@ -48,7 +48,6 @@
 
 .inputContainer {
   display: flex;
-  flex-direction: column;
   gap: 10px;
 }
 
@@ -166,20 +165,9 @@
 }
 /*Fim da Table*/
 
-@media screen and (max-width: 850px) {
-  .form {
-    padding-left: 40px;
-  }
-}
-
-@media screen and (max-width: 850px) {
-  .form {
-    padding-left: 30px;
-  }
-}
 @media screen and (max-width: 480px) {
-  .form {
-    padding-left: 20px;
+  .inputContainer {
+    flex-direction: column;
   }
   .empresaGroup {
     font-size: 0.9rem;

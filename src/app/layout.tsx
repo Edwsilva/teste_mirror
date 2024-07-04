@@ -7,6 +7,7 @@ import "./globals.css";
 import Footer from "./components/Layout/Footer/Footer";
 import { roboto } from "@/utils/fonts";
 import SimpleSlider from "./components/Layout/Slick/SimpleSlider";
+import styles from "./home.module.css";
 
 // const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
@@ -23,7 +24,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={roboto.className}>
+      <body className={`${roboto.className} ${styles.backgroundLayout}`}>
         <Header />
         <Navbar />
         <main>{children}</main>

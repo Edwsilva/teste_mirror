@@ -8,7 +8,7 @@ import { MdBusinessCenter, MdFactCheck, MdAssignmentAdd } from "react-icons/md";
 
 const Servicos = () => {
   return (
-    <Container>
+    <div>
       <div className={styles.mainContainer}>
         <div className={styles.card}>
           <MdBusinessCenter className={styles.icon} />
@@ -47,7 +47,7 @@ const Servicos = () => {
           </p>
         </div>
       </div>
-    </Container>
+    </div>
   );
 };
 
