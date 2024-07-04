@@ -1,3 +1,4 @@
+import Card from "@/app/components/UI/Card/Card";
 import { IEmpresa } from "./Empresas";
 import styles from "./empresas.module.css";
 
@@ -13,6 +14,11 @@ const Empresa = ({ data }: Props) => {
       <div className={styles.subtitleContainer}>
         <p>{data.cnpj}</p>
         <p>{data.nomeFantasia}</p>
+      </div>
+      <div className={styles.cardsContainer}>
+        {data.procuradores.map((procurador, i) => (
+          <Card key={i} />
+        ))}
       </div>
     </div>
   );
