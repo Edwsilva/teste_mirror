@@ -6,7 +6,7 @@ import { MdBusinessCenter, MdFactCheck, MdAssignmentAdd } from "react-icons/md";
 import FormEmpresa from "./(pages)/gerenciar-empresa/FormEmpresa/FormEmpresa";
 import SimpleSlider from "./components/Layout/Slick/SimpleSlider";
 import Servicos from "./components/Layout/Slick/Servicos";
-import Example from "./exampleResponsive";
+import Example from "./components/Layout/Slick/ResponsiveSlick";
 
 export default function Home() {
   var settings = {

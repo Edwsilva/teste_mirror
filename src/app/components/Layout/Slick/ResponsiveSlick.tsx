@@ -1,6 +1,6 @@
 import { useMediaQuery } from "react-responsive";
-import SimpleSlider from "./components/Layout/Slick/SimpleSlider";
-import Servicos from "./components/Layout/Slick/Servicos";
+import SimpleSlider from "./SimpleSlider";
+import Servicos from "./Servicos";
 import styles from "./home.module.css";
 
 const Desktop = ({ children }) => {
@@ -20,7 +20,7 @@ const Default = ({ children }) => {
   return isNotMobile ? children : null;
 };
 
-const Example = () => (
+const ResponsiveSlick = () => (
   <div>
     {/* <Desktop>
       <Servicos />
@@ -35,4 +35,4 @@ const Example = () => (
   </div>
 );
 
-export default Example;
+export default ResponsiveSlick;
