@@ -73,7 +73,7 @@
   color: #7b7b7b;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 768px) {
   .contentContainer {
     background: transparent;
     border: none;
