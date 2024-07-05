@@ -11,6 +11,7 @@ import chevronRight from "@/../public/chevron-up.png";
 import chevronLeft from "@/../public/chevronLeft.png";
 import { SlArrowLeft } from "react-icons/sl";
 import { SlArrowRight } from "react-icons/sl";
+import "./styles.css";
 
 function SampleNextArrow(props) {
   const { className, style, onClick, currentIndex, slideCount } = props;
@@ -20,7 +21,7 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: currentIndex < slideCount - 1 ? "block" : "none",
-        background: "gray",
+        // background: "gray",
       }}
       onClick={onClick}
     ></div>
@@ -36,7 +37,7 @@ function SamplePrevArrow(props) {
       style={{
         ...style,
         display: currentIndex === 0 ? "none" : "block",
-        background: "gray",
+        // background: "gray",
       }}
       onClick={onClick}
     >
@@ -68,7 +69,7 @@ const SimpleSlider = () => {
               <p className={styles.text}>
                 Nesse serviço você pode administrar os serviços que suas
                 empresas utilizam da Prefeitura do Rio, bem como as pessoas que
-                são autorizadas a responder por elas em cada serviço.
+                são autorizadas a responder por elas em cada serviço. Nesse
               </p>
             </div>
             {/* <Image className={styles.chevron} src={chevronRight} alt="Logo" /> */}

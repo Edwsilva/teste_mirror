@@ -1,0 +1,46 @@
+.slick-arrow.slick-next::before {
+  width: 140px; /* Ajuste conforme necessário */
+  height: 140px; /* Ajuste conforme necessário */
+  background-image: url("../../../../../public/chevronLeft.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Estilo dos dots */
+.slick-dots {
+  list-style: none;
+  text-align: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+/* Estilo dos itens da lista (li) */
+.slick-dots li {
+  display: inline-block;
+  margin: -45px 5px; /* Espaçamento entre os dots */
+}
+
+.slick-dots li button {
+  /* font-size: 0px;  Tamanho da fonte do ponto 
+  color: #ff0000;  Cor do ponto  */
+}
+
+.slick-dots li button::before {
+  content: "•"; /* Inserir um ponto como conteúdo */
+  /* content: url("../../../../../public/chevron-up.png"); */
+  font-size: 15px; /* Tamanho do ponto */
+  color: var(--text-dark); /* Cor do ponto */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.slick-dots .slick-active button::before {
+  color: var(--primary) !important;
+}
