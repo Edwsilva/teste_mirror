@@ -20,7 +20,7 @@ function SampleNextArrow(props) {
       style={{
         ...style,
         display: currentIndex < slideCount - 1 ? "block" : "none",
-        background: "red",
+        background: "gray",
       }}
       onClick={onClick}
     ></div>
@@ -29,14 +29,14 @@ function SampleNextArrow(props) {
 
 function SamplePrevArrow(props) {
   const { className, style, onClick, currentIndex, slideCount } = props;
-  console.log(currentIndex, slideCount);
+
   return (
     <div
       className={className}
       style={{
         ...style,
         display: currentIndex === 0 ? "none" : "block",
-        background: "red",
+        background: "gray",
       }}
       onClick={onClick}
     >
