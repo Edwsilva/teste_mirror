@@ -1,6 +1,6 @@
 import Card from "@/app/components/UI/Card/Card";
-import { IEmpresa } from "./Empresas";
-import styles from "./empresas.module.css";
+import { IEmpresa } from "../page";
+import styles from "./content.module.css";
 
 type Props = {
   data: IEmpresa;
@@ -16,10 +16,10 @@ const Empresa = ({ data }: Props) => {
         <p>{data.nomeFantasia}</p>
       </div>
       <div className={styles.cardsContainer}>
-        {data.procuradores.flatMap((procurador) =>
+        {data.procuradores.flatMap((procurador, i) =>
           procurador.atividades.map((atividade, index) => (
             <Card
-              key={index}
+              key={`${i} - ${index}`}
               atividade={atividade}
               procurador={procurador.nome}
               validade={procurador.periodo}

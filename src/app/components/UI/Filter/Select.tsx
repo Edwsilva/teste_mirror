@@ -3,20 +3,24 @@ import { useEffect, useRef, useState } from "react";
 import styles from "./filter.module.css";
 import { TiArrowSortedDown } from "react-icons/ti";
 import { FaCheck } from "react-icons/fa6";
+import { FilterType } from "@/app/(pages)/gerenciar-empresa/page";
 
 type Props = {
-  options: string[];
+  options: FilterType[];
+  selectedOption: FilterType;
+  handleType: (type: FilterType) => void;
 };
 
-const Select = ({ options }: Props) => {
-  const [selected, setSelected] = useState<string>(options[0]);
+const Select = ({ options, selectedOption, handleType }: Props) => {
+  // const [selected, setSelected] = useState<FilterType>(options[0]);
   const [isChecked, setIsChecked] = useState(false);
   const containerRef = useRef<HTMLLabelElement>(null);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  const handleClick = (option: string) => {
-    setSelected(option);
-  };
+  // const handleClick = (option: FilterType) => {
+  //   setSelected(option);
+  //   handleType(option);
+  // };
 
   const handleClickOut = (event: MouseEvent) => {
     if (
@@ -43,7 +47,7 @@ const Select = ({ options }: Props) => {
       ref={containerRef}
     >
       <div className={styles.selectedFilterContainer}>
-        <p className={styles.selectedFilter}>Agrupar por {selected}</p>
+        <p className={styles.selectedFilter}>Agrupar por {selectedOption}</p>
         <TiArrowSortedDown />
       </div>
       <input
@@ -59,9 +63,11 @@ const Select = ({ options }: Props) => {
           <p
             className={styles.option}
             key={i}
-            onClick={handleClick.bind(this, option)}
+            onClick={(e) => {
+              handleType(e.currentTarget.innerText.toLowerCase() as FilterType);
+            }}
           >
-            {option === selected ? (
+            {option === selectedOption ? (
               <FaCheck color={"var(--blue)"} size={10} />
             ) : (
               <FaCheck color={"transparent"} size={10} />
