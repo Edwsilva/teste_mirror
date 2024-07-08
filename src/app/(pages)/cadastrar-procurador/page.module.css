@@ -1,0 +1,12 @@
+.contentContainer {
+  margin-top: 50px;
+  border-radius: 5px;
+  border: 1px solid var(--text);
+  box-shadow: 0 4px 4px 0 var(--text);
+  color: var(--text-dark);
+}
+
+.title{
+  color: var(--text-dark2);
+  text-transform: uppercase;
+}

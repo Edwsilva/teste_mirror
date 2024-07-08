@@ -8,6 +8,7 @@ import Empresas from "@/app/(pages)/gerenciar-empresa/Content/Empresas";
 import Procuradores from "./Content/Procuradores";
 import useSWR from "swr";
 import { fetcher } from "@/api/empresas";
+import { useRouter } from "next/navigation";
 export interface IEmpresa {
   id: number;
   nome: string;
@@ -27,13 +28,14 @@ export interface IEmpresa {
 export type FilterType = "empresa" | "procurador" | "atividade";
 
 const GerenciarEmpresas = () => {
+  const [filterTerm, setFilterTerm] = useState<string>("");
+  const [filterType, setFilterType] = useState<FilterType>("empresa");
+
+  const router = useRouter();
   const { data, error, isLoading } = useSWR<IEmpresa[]>(
     `http://localhost:3001/empresas`,
     fetcher,
   );
-
-  const [filterTerm, setFilterTerm] = useState<string>("");
-  const [filterType, setFilterType] = useState<FilterType>("empresa");
 
   const handleFilterTerm = (term: string) => {
     setFilterTerm(term);
@@ -43,15 +45,13 @@ const GerenciarEmpresas = () => {
     setFilterType(type);
   };
 
-  console.log("TYPE", filterType);
-
   if (error) return <h1>Ocorreu um erro!</h1>;
   if (isLoading || !data) return <h1>Loading...</h1>;
 
   return (
     <Container>
       <div className={styles.contentContainer}>
-        <Button bg="secondary">cadastrar procurador</Button>
+        <Button bg="secondary" props={{ onClick: () => router.push('/cadastrar-procurador') }}>cadastrar procurador</Button>
         <Filter
           handleFilterTerm={handleFilterTerm}
           handleFilterType={handleFilterType}

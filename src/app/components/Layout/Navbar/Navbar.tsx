@@ -20,6 +20,7 @@ const NAVBARITEMS = [
 const Navbar = () => {
   const [dropdownVisible, setDropdownVisible] = useState(false);
   const pathname = usePathname();
+  console.log(pathname);
 
   const handleDropdown = () => {
     setDropdownVisible((prevState) => !prevState);
@@ -30,7 +31,7 @@ const Navbar = () => {
       <div className={styles.navbarActive}>
         <div className={styles.container} onClick={handleDropdown}>
           <div className={styles.navbarContent}>
-            <h2 className={styles.linkTitle}>{NAVBARITEMS.find(item => item.path === pathname)?.title}</h2>
+            <h2 className={styles.linkTitle}>{pathname === '/cadastrar-procurador' ? "Cadastrar Procurador" : NAVBARITEMS.find(item => item.path === pathname)?.title}</h2>
             <button
               className={`${styles.iconButton} ${dropdownVisible ? styles.open : ""}`}
             >
