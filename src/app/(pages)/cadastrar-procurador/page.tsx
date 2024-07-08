@@ -2,6 +2,7 @@
 import Container from '@/app/components/Layout/Container/Container';
 import Button from '@/app/components/UI/Button/Button';
 import { formatCPF } from '@/app/utils/validate';
+import { useRouter } from 'next/navigation';
 import { ChangeEvent, useState } from 'react';
 import styles from './page.module.css';
 
@@ -17,6 +18,7 @@ const CadastrarProcurador = () => {
   const [cpf, setCPF] = useState<string>('');
   const [nome, setNome] = useState<string>('');
   const [atividade, setAtividade] = useState<string | undefined>();
+  const router = useRouter();
 
   const handleSelectChange = (e: ChangeEvent<HTMLSelectElement>) => {
     setSelectValue(e.target.value);
@@ -32,6 +34,10 @@ const CadastrarProcurador = () => {
 
   const handleRadioChange = (e: ChangeEvent<HTMLInputElement>) => {
     setAtividade(e.target.value);
+  }
+
+  const closeForm = () => {
+    router.back();
   }
 
   return (
@@ -79,28 +85,28 @@ const CadastrarProcurador = () => {
           {/*Map de atividades*/}
           <div>
             <input type="radio" name="atividade" id="alvara" value="Alvará transitório de eventos" checked={atividade === "Alvará transitório de eventos"} onChange={handleRadioChange} />
-            <label className={`${atividade === "Alvará transitório de eventos" && styles.inputRadioSelected}`} htmlFor="alvara">Alvará transitório de eventos</label>
+            <label className={`${styles.inputRadio} ${atividade === "Alvará transitório de eventos" && styles.inputRadioSelected}`} htmlFor="alvara">Alvará transitório de eventos</label>
           </div>
           <div>
             <input type="radio" name="atividade" id="acesso" value="Acesso do tesouro municipal" checked={atividade === "Acesso do tesouro municipal"} onChange={handleRadioChange} />
-            <label className={`${atividade === "Acesso do tesouro municipal" && styles.inputRadioSelected}`} htmlFor="acesso">Acesso do tesouro municipal</label>
+            <label className={`${styles.inputRadio} ${atividade === "Acesso do tesouro municipal" && styles.inputRadioSelected}`} htmlFor="acesso">Acesso do tesouro municipal</label>
           </div>
           <div>
             <input type="radio" name="atividade" id="licenciamento" value="Licenciamento da vigilância sanitária" checked={atividade === "Licenciamento da vigilância sanitária"} onChange={handleRadioChange} />
-            <label className={`${atividade === "Licenciamento da vigilância sanitária" && styles.inputRadioSelected}`} htmlFor="licenciamento">Licenciamento da vigilância sanitária</label>
+            <label className={`${styles.inputRadio} ${atividade === "Licenciamento da vigilância sanitária" && styles.inputRadioSelected}`} htmlFor="licenciamento">Licenciamento da vigilância sanitária</label>
           </div>
           <div>
             <input type="radio" name="atividade" id="multas" value="Multas de trânsito" checked={atividade === "Multas de trânsito"} onChange={handleRadioChange} />
-            <label className={`${atividade === "Multas de trânsito" && styles.inputRadioSelected}`} htmlFor="multas">Multas de trânsito</label>
+            <label className={`${styles.inputRadio} ${atividade === "Multas de trânsito" && styles.inputRadioSelected}`} htmlFor="multas">Multas de trânsito</label>
           </div>
           <div>
             <input type="radio" name="atividade" id="rio" value="Rio mais fácil negócios" checked={atividade === "Rio mais fácil negócios"} onChange={handleRadioChange} />
-            <label className={`${atividade === "Rio mais fácil negócios" && styles.inputRadioSelected}`} htmlFor="rio">Rio mais fácil negócios</label>
+            <label className={`${styles.inputRadio} ${atividade === "Rio mais fácil negócios" && styles.inputRadioSelected}`} htmlFor="rio">Rio mais fácil negócios</label>
           </div>
         </div>
-        <div className={styles.inputsContainer}>
+        <div className={styles.buttonsContainer}>
           <Button bg='secondary'>confirmar</Button>
-          <Button type='no-outlined' bg='error'>cancelar</Button>
+          <Button type='no-outlined' bg='error' props={{ onClick: closeForm }}>cancelar</Button>
         </div>
       </form>
     </Container>
