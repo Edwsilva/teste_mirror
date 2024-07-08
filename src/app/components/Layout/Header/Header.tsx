@@ -1,16 +1,13 @@
 "use client";
-// import Links from "./links/Links";
 import { useState } from "react";
 import styles from "./header.module.css";
 // import Login from "../../app/(auth)/login/page";
+import logo from "@/../public/logocarioca digital.png";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "@/../public/logocarioca digital.png";
 // import MobileNavbar from "./MobileNavbar";
 // import MobileNavbarButton from "./MobileNavbarButton";
-import Container from "../Container/Container";
 import Navbar from "../Navbar/Navbar";
-// import Login from "./login/Login";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
