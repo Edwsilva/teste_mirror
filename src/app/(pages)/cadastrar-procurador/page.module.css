@@ -1,12 +1,95 @@
 .contentContainer {
-  margin-top: 50px;
+  margin: 50px 0;
   border-radius: 5px;
+  padding: 30px;
   border: 1px solid var(--text);
   box-shadow: 0 4px 4px 0 var(--text);
   color: var(--text-dark);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .title{
+  font-size: 1.1rem;
   color: var(--text-dark2);
   text-transform: uppercase;
+}
+
+.label{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.inputsContainer{
+  display: flex;
+  gap: 20px;
+}
+
+.inputsDateContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputsDateContainer > div{
+  display: flex;
+  gap: 20px;
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.inputDateContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.inputContainerButton{
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.select,
+.input{
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid var(--text);
+  padding: 5px;
+  min-height: 29px;
+}
+
+.inputText{
+  min-width: 322.5px;
+}
+
+.inputDate{
+  color: var(--text2);
+}
+
+.inputDateSelected{
+  color: var(--black);
+}
+
+.radioContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.radioContainer > div{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.inputRadioSelected{
+  color: var(--black);
 }
