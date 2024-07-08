@@ -36,7 +36,6 @@
   background-size: contain; /* ou cover dependendo de como você quer que a imagem seja redimensionada */
   background-repeat: no-repeat;
   background-position: center;
-  /* color: red; */
 }
 
 /* Estilo dos dots */
