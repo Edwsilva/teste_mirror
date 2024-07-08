@@ -1,21 +1,25 @@
 import { useMediaQuery } from "react-responsive";
 import SimpleSlider from "./SimpleSlider";
 import Servicos from "./Servicos";
-import styles from "./home.module.css";
+import { ReactNode } from "react";
 
-const Desktop = ({ children }) => {
+type Props = {
+  children: ReactNode;
+};
+
+const Desktop = ({ children }: Props) => {
   const isDesktop = useMediaQuery({ minWidth: 992 });
   return isDesktop ? children : null;
 };
-const Tablet = ({ children }) => {
+const Tablet = ({ children }: Props) => {
   const isTablet = useMediaQuery({ minWidth: 768, maxWidth: 991 });
   return isTablet ? children : null;
 };
-const Mobile = ({ children }) => {
+const Mobile = ({ children }: Props) => {
   const isMobile = useMediaQuery({ maxWidth: 768 });
   return isMobile ? children : null;
 };
-const Default = ({ children }) => {
+const Default = ({ children }: Props) => {
   const isNotMobile = useMediaQuery({ minWidth: 768 });
   return isNotMobile ? children : null;
 };

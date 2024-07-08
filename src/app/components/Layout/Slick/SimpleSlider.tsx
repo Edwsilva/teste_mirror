@@ -1,50 +1,61 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, FunctionComponent } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import styles from "./slider.module.css";
-import Container from "../Container/Container";
 import { MdBusinessCenter, MdFactCheck, MdAssignmentAdd } from "react-icons/md";
-import Image from "next/image";
-import chevronRight from "@/../public/chevron-up.png";
-import chevronLeft from "@/../public/chevronLeft.png";
-import { SlArrowLeft } from "react-icons/sl";
-import { SlArrowRight } from "react-icons/sl";
+
 import "./styles.css";
 
-function SampleNextArrow(props) {
-  const { className, style, onClick, currentIndex, slideCount } = props;
+interface SampleNextArrowProps {
+  className?: string;
+  style?: React.CSSProperties;
+  onClick?: () => void;
+  currentIndex: number;
+  slideCount: number;
+}
+
+const SampleNextArrow: FunctionComponent<SampleNextArrowProps> = ({
+  className,
+  style,
+  onClick,
+  currentIndex,
+  slideCount,
+}) => {
+  // const { className, style, onClick, currentIndex, slideCount } = props;
   return (
     <div
       className={className}
       style={{
         ...style,
         display: currentIndex < slideCount - 1 ? "block" : "none",
-        // background: "gray",
       }}
       onClick={onClick}
     ></div>
   );
-}
+};
 
-function SamplePrevArrow(props) {
-  const { className, style, onClick, currentIndex, slideCount } = props;
-
+const SamplePrevArrow: FunctionComponent<SampleNextArrowProps> = ({
+  className,
+  style,
+  onClick,
+  currentIndex,
+  slideCount,
+}) => {
   return (
     <div
       className={className}
       style={{
         ...style,
         display: currentIndex === 0 ? "none" : "block",
-        // background: "gray",
       }}
       onClick={onClick}
     >
       Prev (current index: {currentIndex})
     </div>
   );
-}
+};
 const SimpleSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -56,7 +67,8 @@ const SimpleSlider = () => {
     slidesToScroll: 1,
     nextArrow: <SampleNextArrow currentIndex={currentIndex} slideCount={3} />,
     prevArrow: <SamplePrevArrow currentIndex={currentIndex} slideCount={0} />,
-    beforeChange: (oldIndex, newIndex) => setCurrentIndex(newIndex),
+    beforeChange: (oldIndex: number, newIndex: number) =>
+      setCurrentIndex(newIndex),
   };
 
   return (
