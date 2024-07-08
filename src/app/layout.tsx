@@ -1,10 +1,8 @@
+import { montserrat } from "@/utils/fonts";
 import type { Metadata } from "next";
-import Header from "./components/Layout/Header/Header";
-import Navbar from "./components/Layout/Navbar/Navbar";
-import "./globals.css";
 import Footer from "./components/Layout/Footer/Footer";
-import { roboto, open_sans } from "@/utils/fonts";
-import SimpleSlider from "./components/Layout/Slick/SimpleSlider";
+import Header from "./components/Layout/Header/Header";
+import "./globals.css";
 import styles from "./home.module.css";
 
 export const metadata: Metadata = {
@@ -20,9 +18,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${open_sans.className} ${styles.backgroundLayout}`}>
+      <body className={`${montserrat.className} ${styles.backgroundLayout}`}>
         <Header />
-        {/* <Navbar /> */}
         <main>{children}</main>
         <Footer />
       </body>

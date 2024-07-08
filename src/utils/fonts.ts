@@ -1,4 +1,4 @@
-import { Inter, Roboto, Open_Sans } from "next/font/google";
+import { Inter, Montserrat, Open_Sans, Roboto } from "next/font/google";
 
 export const inter = Inter({
   subsets: ["latin"],
@@ -12,6 +12,13 @@ export const roboto = Roboto({
 });
 
 export const open_sans = Open_Sans({
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
+  subsets: ["latin"],
+  display: "swap",
+});
+
+export const montserrat = Montserrat({
   weight: ["400", "700"],
   style: ["normal", "italic"],
   subsets: ["latin"],
