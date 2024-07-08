@@ -5,6 +5,7 @@
 }
 
 :root {
+  --bg: #F5F5F5;
   --primary: #02B0D6;
   --primary-light: #4ACDF0;
   --primary-dark: #0092B5;
@@ -25,5 +26,6 @@
   --black: #212529;
 }
 
-
-
+body{
+  background-color: var(--bg);
+}
