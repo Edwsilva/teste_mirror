@@ -1,15 +1,11 @@
 import type { Metadata } from "next";
-import { Roboto } from "next/font/google";
-import { Inter } from "next/font/google";
 import Header from "./components/Layout/Header/Header";
 import Navbar from "./components/Layout/Navbar/Navbar";
 import "./globals.css";
 import Footer from "./components/Layout/Footer/Footer";
-import { roboto } from "@/utils/fonts";
+import { roboto, open_sans } from "@/utils/fonts";
 import SimpleSlider from "./components/Layout/Slick/SimpleSlider";
 import styles from "./home.module.css";
-
-// const roboto = Roboto({ weight: "400", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Minhas Empresas",
@@ -24,9 +20,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${roboto.className} ${styles.backgroundLayout}`}>
+      <body className={`${open_sans.className} ${styles.backgroundLayout}`}>
         <Header />
-        <Navbar />
+        {/* <Navbar /> */}
         <main>{children}</main>
         <Footer />
       </body>
