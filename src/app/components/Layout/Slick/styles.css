@@ -1,8 +1,10 @@
 .slick-arrow.slick-next {
+  /* background-color: aqua; */
   width: 20px; /* Ajuste conforme necessário */
   height: 20px; /* Ajuste conforme necessário */
-  position: absolute;
-  margin-left: 10px;
+  /* position: absolute; */
+  margin-top: 30px;
+  margin-right: 1cqh;
 }
 
 .slick-arrow.slick-next::before {
@@ -15,13 +17,14 @@
   background-image: url("../../../../../public/icon-arrow-chevron-right.svg");
   background-size: contain; /* ou cover dependendo de como você quer que a imagem seja redimensionada */
   background-repeat: no-repeat;
-  background-position: center;
+  /* background-position: left; */
 }
 
 .slick-arrow.slick-prev {
+  /* background-color: aqua; */
   width: 20px; /* Ajuste conforme necessário */
   height: 20px; /* Ajuste conforme necessário */
-  position: absolute;
+  margin-top: 30px;
   margin-left: 10px;
 }
 

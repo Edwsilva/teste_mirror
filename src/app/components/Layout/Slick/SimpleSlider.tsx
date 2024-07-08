@@ -1,10 +1,10 @@
 "use client";
-import React, { useState, FunctionComponent } from "react";
+import React, { FunctionComponent, useState } from "react";
+import { MdAssignmentAdd, MdBusinessCenter, MdFactCheck } from "react-icons/md";
 import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "slick-carousel/slick/slick.css";
 import styles from "./slider.module.css";
-import { MdBusinessCenter, MdFactCheck, MdAssignmentAdd } from "react-icons/md";
 
 import "./styles.css";
 

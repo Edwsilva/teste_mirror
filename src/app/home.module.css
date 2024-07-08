@@ -1,5 +1,5 @@
 .backgroundLayout {
-  background-color: var(--text-light);
+  background-color: var(--bg);
 }
 .contentContainer {
   /* margin-top: 20px; */
