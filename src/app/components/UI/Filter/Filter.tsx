@@ -3,6 +3,7 @@ import { FilterType } from "@/app/(pages)/gerenciar-empresa/page";
 import Button from "../Button/Button";
 import styles from "./filter.module.css";
 import Select from "./Select";
+import { useDebouncedCallback } from "use-debounce"
 
 type Props = {
   handleFilterTerm: (term: string) => void;
@@ -13,6 +14,13 @@ type Props = {
 const OPTIONS: FilterType[] = ["empresa", "procurador", "atividade"];
 
 const Filter = ({ handleFilterTerm, handleFilterType, filterType }: Props) => {
+
+  const debounced = useDebouncedCallback(
+    (value: string) => {
+      handleFilterTerm(value);
+    }, 500
+  )
+
   return (
     <div className={styles.container}>
       <div className={styles.inputContainer}>
@@ -21,7 +29,7 @@ const Filter = ({ handleFilterTerm, handleFilterType, filterType }: Props) => {
           type="text"
           placeholder="Buscar..."
           onChange={(e) => {
-            handleFilterTerm(e.target.value);
+            debounced(e.target.value);
           }}
         />
         <Button type="outlined" bg="secondary">

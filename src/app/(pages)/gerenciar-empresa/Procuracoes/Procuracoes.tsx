@@ -12,9 +12,13 @@ type Props = {
 const groupBy = <T, K extends keyof T>(array: T[], key: K) => {
   return array.reduce((result, currentValue) => {
     const groupKey = currentValue[key];
+    console.log(`groupKey - ${groupKey}`);
+    console.log(`Result 1 - ${result}`);
+    console.log(`currentValue - ${currentValue}`)
     if (typeof groupKey === 'string' || typeof groupKey === 'number') {
       if (!result[groupKey]) {
         result[groupKey] = [];
+        console.log(`Result 2 - ${result}`);
       }
       result[groupKey].push(currentValue);
     }
@@ -29,7 +33,7 @@ const Procuracoes = ({ data, term, type }: Props) => {
     procuracao[filter].toLowerCase().includes(term.toLowerCase())
   ), filter);
 
-  console.log(Object.entries(filteredData));
+  console.log(filteredData);
 
   return (
     <div className={styles.procuracoes}>
