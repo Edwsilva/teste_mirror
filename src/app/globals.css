@@ -25,7 +25,18 @@
   --blue-dark: #2f57c9;
   --black: #212529;
 }
-
+html,
 body {
   background-color: var(--bg);
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
 }

@@ -9,8 +9,6 @@ export default function Home() {
     <Container>
       <div className={styles.contentContainer}>
         <h3 className={styles.title}>O que é esse serviço?</h3>
-        {/* <Servicos />
-        <SimpleSlider /> */}
         <ResponsiveSlisk />
         <FormEmpresa />
       </div>
