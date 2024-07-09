@@ -26,3 +26,7 @@
     height: 1px;
     background-color: var(--text);
 }
+
+.subtitleAtv{
+    color: var(--text-dark);
+}

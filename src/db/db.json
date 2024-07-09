@@ -1,208 +1,342 @@
 {
   "procuracoes": [
     {
-      "id": "1",
-      "titular": "Empresa 1",
-      "inscricao": "01.256.365/0001-22",
-      "servico": "Confirmar convite de procuração para empresa1?",
-      "status": "1",
-      "atividades": [
-        "Alvará Transitório de Eventos",
-        "Licenciamento da Vigilância Sanitária",
-        "Rio Mais Fácil Negócios"
-      ]
-    },
-    {
-      "id": "2",
-      "titular": "Empresa 2",
-      "inscricao": "02.256.365/0001-22",
-      "servico": "Confirmar convite de procuração para empresa2?",
-      "status": "2",
-      "atividades": [
-        "Alvará Transitório de Eventos",
-        "Licenciamento da Vigilância Sanitária",
-        "Rio Mais Fácil Negócios"
-      ]
-    },
-    {
-      "id": "3",
-      "titular": "Empresa 3",
-      "inscricao": "03.256.365/0001-22",
-      "servico": "Confirmar convite de procuração para empresa3?",
-      "status": "1",
-      "atividades": [
-        "Alvará Transitório de Eventos",
-        "Licenciamento da Vigilância Sanitária",
-        "Rio Mais Fácil Negócios"
-      ]
-    },
-    {
-      "id": "4",
-      "titular": "Empresa 4",
-      "inscricao": "04.256.365/0001-22",
-      "servico": "Confirmar convite de procuração para empresa4?",
-      "status": "1",
-      "atividades": [
-        "Alvará Transitório de Eventos"
-      ]
-    },
-    {
-      "id": "5",
-      "titular": "Empresa 5",
-      "inscricao": "05.256.365/0001-22",
-      "servico": "Confirmar convite de procuração para empresa5?",
-      "status": "2",
-      "atividades": [
-        "Alvará Transitório de Eventos",
-        "Licenciamento da Vigilância Sanitária"
-      ]
-    },
-    {
-      "id": "6",
-      "titular": "Empresa 6",
-      "inscricao": "06.256.365/0001-22",
-      "servico": "Confirmar convite de procuração para empresa6?",
-      "status": "1",
-      "atividades": [
-        "Licenciamento da Vigilância Sanitária",
-        "Rio Mais Fácil Negócios",
-        "Licenciamento da Vigilância Sanitária",
-        "Alvará Transitório de Eventos",
-        "Outra Autorização",
-        "Outra Autorização 2.0",
-        "Outra Autorização 3.0"
-      ]
-    },
-    {
-      "id": "7",
-      "titular": "Empresa 7",
-      "inscricao": "07.256.365/0001-22",
-      "servico": "Confirmar convite de procuração para empresa7?",
-      "status": "1",
-      "atividades": [
-        "Alvará Transitório de Eventos",
-        "Rio Mais Fácil Negócios"
-      ]
-    },
-    {
-      "id": "8",
-      "titular": "Empresa 8",
-      "inscricao": "08.256.365/0001-22",
-      "servico": "Confirmar convite de procuração para empresa8?",
-      "status": "2",
-      "atividades": [
-        "Licenciamento da Vigilância Sanitária",
-        "Rio Mais Fácil Negócios"
-      ]
-    },
-    {
-      "id": "9",
-      "titular": "Empresa 9",
-      "inscricao": "09.256.365/0001-22",
-      "servico": "Confirmar convite de procuração para empresa9?",
-      "status": "1",
-      "atividades": [
-        "Licenciamento da Vigilância Sanitária",
-        "Rio Mais Fácil Negócios"
-      ]
-    }
-  ],
-  "empresas": [
-    {
       "id": 1,
-      "nome": "Burgers.Rio LTA",
-      "nomeFantasia": "Burgers.rio",
+      "procurador": "Rick Grimes",
+      "cpf": "123.456.789-00",
       "representante": false,
-      "cnpj": "02.362.370/0001-02",
-      "procuradores": [
-        {
-          "nome": "Rick Grimes",
-          "cpf": "123.456.789-00",
-          "periodo": "30/11/2017 até 30/11/2050",
-          "atividades": [
-            "Alvará Transitório de Eventos",
-            "Licenciamento da Vigilância Sanitária",
-            "Rio Mais Fácil Negócios"
-          ],
-          "status": "APROVADO"
-        },
-        {
-          "nome": "Ricardo Coração de Leão",
-          "cpf": "987.654.321-00",
-          "periodo": "19/05/2019 até 19/05/2050",
-          "atividades": [
-            "Alvará Transitório de Eventos",
-            "Licenciamento da Vigilância Sanitária",
-            "Rio Mais Fácil Negócios"
-          ],
-          "status": "APROVADO"
-        },
-        {
-          "nome": "Ricks on The Barbie",
-          "cpf": "456.789.123-00",
-          "periodo": "30/11/2017 até 30/11/2050",
-          "atividades": [
-            "Alvará Transitório de Eventos",
-            "Licenciamento da Vigilância Sanitária",
-            "Rio Mais Fácil Negócios"
-          ],
-          "status": "PENDENTE"
-        }
-      ],
-      "atividadesDisponiveis": [
-        "Alvará Transitório de Eventos",
-        "Rio Mais Fácil Negócios",
-        "Acesso do Tesouro Municipal",
-        "Licenciamento da Vigilância Sanitária",
-        "Multas de Trânsito"
-      ]
+      "empresaNome": "Burgers.Rio LTA",
+      "empresaNomeFantasia": "Burgers.rio",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Alvará Transitório de Eventos",
+      "status": "APROVADO"
     },
     {
       "id": 2,
-      "nome": "Pizza e Cia LTA",
-      "nomeFantasia": "Pizza & Cia",
+      "procurador": "Rick Grimes",
+      "cpf": "123.456.789-00",
+      "representante": false,
+      "empresaNome": "Burgers.Rio LTA",
+      "empresaNomeFantasia": "Burgers.rio",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Licenciamento da Vigilância Sanitária",
+      "status": "APROVADO"
+    },
+    {
+      "id": 3,
+      "procurador": "Rick Grimes",
+      "cpf": "123.456.789-00",
+      "representante": false,
+      "empresaNome": "Burgers.Rio LTA",
+      "empresaNomeFantasia": "Burgers.rio",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Rio Mais Fácil Negócios",
+      "status": "APROVADO"
+    },
+    {
+      "id": 4,
+      "procurador": "Ricardo Coração de Leão",
+      "cpf": "987.654.321-00",
+      "representante": false,
+      "empresaNome": "Burgers.Rio LTA",
+      "empresaNomeFantasia": "Burgers.rio",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "19/05/2019",
+      "periodoFinal": "19/05/2050",
+      "atividade": "Alvará Transitório de Eventos",
+      "status": "APROVADO"
+    },
+    {
+      "id": 5,
+      "procurador": "Ricardo Coração de Leão",
+      "cpf": "987.654.321-00",
+      "representante": false,
+      "empresaNome": "Burgers.Rio LTA",
+      "empresaNomeFantasia": "Burgers.rio",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "19/05/2019",
+      "periodoFinal": "19/05/2050",
+      "atividade": "Licenciamento da Vigilância Sanitária",
+      "status": "APROVADO"
+    },
+    {
+      "id": 6,
+      "procurador": "Ricardo Coração de Leão",
+      "cpf": "987.654.321-00",
+      "representante": false,
+      "empresaNome": "Burgers.Rio LTA",
+      "empresaNomeFantasia": "Burgers.rio",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "19/05/2019",
+      "periodoFinal": "19/05/2050",
+      "atividade": "Rio Mais Fácil Negócios",
+      "status": "APROVADO"
+    },
+    {
+      "id": 7,
+      "procurador": "Ricks on The Barbie",
+      "cpf": "456.789.123-00",
+      "representante": false,
+      "empresaNome": "Burgers.Rio LTA",
+      "empresaNomeFantasia": "Burgers.rio",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Alvará Transitório de Eventos",
+      "status": "PENDENTE"
+    },
+    {
+      "id": 8,
+      "procurador": "Ricks on The Barbie",
+      "cpf": "456.789.123-00",
+      "representante": false,
+      "empresaNome": "Burgers.Rio LTA",
+      "empresaNomeFantasia": "Burgers.rio",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Licenciamento da Vigilância Sanitária",
+      "status": "PENDENTE"
+    },
+    {
+      "id": 9,
+      "procurador": "Ricks on The Barbie",
+      "cpf": "456.789.123-00",
+      "representante": false,
+      "empresaNome": "Burgers.Rio LTA",
+      "empresaNomeFantasia": "Burgers.rio",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Rio Mais Fácil Negócios",
+      "status": "PENDENTE"
+    },
+    {
+      "id": 10,
+      "procurador": "Rick Grimes",
+      "cpf": "123.456.789-00",
       "representante": true,
-      "cnpj": "02.362.370/0001-02",
-      "procuradores": [
-        {
-          "nome": "Rick Grimes",
-          "cpf": "123.456.789-00",
-          "periodo": "30/11/2017 até 30/11/2050",
-          "atividades": [
-            "Alvará Transitório de Eventos",
-            "Licenciamento da Vigilância Sanitária",
-            "Rio Mais Fácil Negócios"
-          ],
-          "status": "APROVADO"
-        },
-        {
-          "nome": "Ricardo Coração de Leão",
-          "cpf": "987.654.321-00",
-          "periodo": "19/05/2019 até 19/05/2050",
-          "atividades": [
-            "Alvará Transitório de Eventos",
-            "Licenciamento da Vigilância Sanitária",
-            "Rio Mais Fácil Negócios"
-          ],
-          "status": "APROVADO"
-        },
-        {
-          "nome": "Ricks on The Barbie",
-          "cpf": "456.789.123-00",
-          "periodo": "30/11/2017 até 30/11/2050",
-          "atividades": [
-            "Alvará Transitório de Eventos",
-            "Licenciamento da Vigilância Sanitária",
-            "Rio Mais Fácil Negócios"
-          ],
-          "status": "PENDENTE"
-        }
-      ],
-      "atividadesDisponiveis": [
-        "Alvará Transitório de Eventos",
-        "Rio Mais Fácil Negócios",
-        "Licenciamento da Vigilância Sanitária"
-      ]
+      "empresaNome": "Pizza e Cia LTA",
+      "empresaNomeFantasia": "Pizza & Cia",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Alvará Transitório de Eventos",
+      "status": "APROVADO"
+    },
+    {
+      "id": 11,
+      "procurador": "Rick Grimes",
+      "cpf": "123.456.789-00",
+      "representante": true,
+      "empresaNome": "Pizza e Cia LTA",
+      "empresaNomeFantasia": "Pizza & Cia",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Licenciamento da Vigilância Sanitária",
+      "status": "APROVADO"
+    },
+    {
+      "id": 12,
+      "procurador": "Rick Grimes",
+      "cpf": "123.456.789-00",
+      "representante": true,
+      "empresaNome": "Pizza e Cia LTA",
+      "empresaNomeFantasia": "Pizza & Cia",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Rio Mais Fácil Negócios",
+      "status": "APROVADO"
+    },
+    {
+      "id": 13,
+      "procurador": "Ricardo Coração de Leão",
+      "cpf": "987.654.321-00",
+      "representante": true,
+      "empresaNome": "Pizza e Cia LTA",
+      "empresaNomeFantasia": "Pizza & Cia",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "19/05/2019",
+      "periodoFinal": "19/05/2050",
+      "atividade": "Alvará Transitório de Eventos",
+      "status": "APROVADO"
+    },
+    {
+      "id": 14,
+      "procurador": "Ricardo Coração de Leão",
+      "cpf": "987.654.321-00",
+      "representante": true,
+      "empresaNome": "Pizza e Cia LTA",
+      "empresaNomeFantasia": "Pizza & Cia",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "19/05/2019",
+      "periodoFinal": "19/05/2050",
+      "atividade": "Licenciamento da Vigilância Sanitária",
+      "status": "APROVADO"
+    },
+    {
+      "id": 15,
+      "procurador": "Ricardo Coração de Leão",
+      "cpf": "987.654.321-00",
+      "representante": true,
+      "empresaNome": "Pizza e Cia LTA",
+      "empresaNomeFantasia": "Pizza & Cia",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "19/05/2019",
+      "periodoFinal": "19/05/2050",
+      "atividade": "Rio Mais Fácil Negócios",
+      "status": "APROVADO"
+    },
+    {
+      "id": 16,
+      "procurador": "Ricks on The Barbie",
+      "cpf": "456.789.123-00",
+      "representante": true,
+      "empresaNome": "Pizza e Cia LTA",
+      "empresaNomeFantasia": "Pizza & Cia",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Alvará Transitório de Eventos",
+      "status": "PENDENTE"
+    },
+    {
+      "id": 17,
+      "procurador": "Ricks on The Barbie",
+      "cpf": "456.789.123-00",
+      "representante": true,
+      "empresaNome": "Pizza e Cia LTA",
+      "empresaNomeFantasia": "Pizza & Cia",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Licenciamento da Vigilância Sanitária",
+      "status": "PENDENTE"
+    },
+    {
+      "id": 18,
+      "procurador": "Ricks on The Barbie",
+      "cpf": "456.789.123-00",
+      "representante": true,
+      "empresaNome": "Pizza e Cia LTA",
+      "empresaNomeFantasia": "Pizza & Cia",
+      "empresaCnpj": "02.362.370/0001-02",
+      "periodoInicial": "30/11/2017",
+      "periodoFinal": "30/11/2050",
+      "atividade": "Rio Mais Fácil Negócios",
+      "status": "PENDENTE"
+    },
+    {
+      "id": 19,
+      "procurador": "Jane Doe",
+      "cpf": "789.123.456-00",
+      "representante": false,
+      "empresaNome": "Tech Innovators Ltd",
+      "empresaNomeFantasia": "Tech Innovators",
+      "empresaCnpj": "12.345.678/0001-90",
+      "periodoInicial": "01/01/2021",
+      "periodoFinal": "01/01/2030",
+      "atividade": "Alvará Transitório de Eventos",
+      "status": "APROVADO"
+    },
+    {
+      "id": 20,
+      "procurador": "Jane Doe",
+      "cpf": "789.123.456-00",
+      "representante": false,
+      "empresaNome": "Tech Innovators Ltd",
+      "empresaNomeFantasia": "Tech Innovators",
+      "empresaCnpj": "12.345.678/0001-90",
+      "periodoInicial": "01/01/2021",
+      "periodoFinal": "01/01/2030",
+      "atividade": "Licenciamento da Vigilância Sanitária",
+      "status": "PENDENTE"
+    },
+    {
+      "id": 21,
+      "procurador": "John Smith",
+      "cpf": "456.123.789-00",
+      "representante": true,
+      "empresaNome": "Green Energy Co.",
+      "empresaNomeFantasia": "Green Energy",
+      "empresaCnpj": "23.456.789/0001-11",
+      "periodoInicial": "15/08/2020",
+      "periodoFinal": "15/08/2040",
+      "atividade": "Rio Mais Fácil Negócios",
+      "status": "APROVADO"
+    },
+    {
+      "id": 22,
+      "procurador": "John Smith",
+      "cpf": "456.123.789-00",
+      "representante": true,
+      "empresaNome": "Green Energy Co.",
+      "empresaNomeFantasia": "Green Energy",
+      "empresaCnpj": "23.456.789/0001-11",
+      "periodoInicial": "15/08/2020",
+      "periodoFinal": "15/08/2040",
+      "atividade": "Alvará Transitório de Eventos",
+      "status": "PENDENTE"
+    },
+    {
+      "id": 23,
+      "procurador": "Maria Silva",
+      "cpf": "321.654.987-00",
+      "representante": false,
+      "empresaNome": "Fast Logistics SA",
+      "empresaNomeFantasia": "Fast Logistics",
+      "empresaCnpj": "34.567.890/0001-22",
+      "periodoInicial": "05/06/2018",
+      "periodoFinal": "05/06/2035",
+      "atividade": "Licenciamento da Vigilância Sanitária",
+      "status": "APROVADO"
+    },
+    {
+      "id": 24,
+      "procurador": "Maria Silva",
+      "cpf": "321.654.987-00",
+      "representante": false,
+      "empresaNome": "Fast Logistics SA",
+      "empresaNomeFantasia": "Fast Logistics",
+      "empresaCnpj": "34.567.890/0001-22",
+      "periodoInicial": "05/06/2018",
+      "periodoFinal": "05/06/2035",
+      "atividade": "Rio Mais Fácil Negócios",
+      "status": "PENDENTE"
+    },
+    {
+      "id": 25,
+      "procurador": "Carlos Andrade",
+      "cpf": "654.321.987-00",
+      "representante": true,
+      "empresaNome": "Healthy Food Ltd",
+      "empresaNomeFantasia": "Healthy Food",
+      "empresaCnpj": "45.678.901/0001-33",
+      "periodoInicial": "20/03/2022",
+      "periodoFinal": "20/03/2042",
+      "atividade": "Alvará Transitório de Eventos",
+      "status": "APROVADO"
+    },
+    {
+      "id": 26,
+      "procurador": "Carlos Andrade",
+      "cpf": "654.321.987-00",
+      "representante": true,
+      "empresaNome": "Healthy Food Ltd",
+      "empresaNomeFantasia": "Healthy Food",
+      "empresaCnpj": "45.678.901/0001-33",
+      "periodoInicial": "20/03/2022",
+      "periodoFinal": "20/03/2042",
+      "atividade": "Licenciamento da Vigilância Sanitária",
+      "status": "PENDENTE"
     }
   ]
 }
