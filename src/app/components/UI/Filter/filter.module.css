@@ -1,0 +1,86 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #212529;
+  gap: 20px;
+}
+
+.inputContainer{
+  display: flex;
+  gap: 20px;
+}
+
+.input{
+  flex: 1;
+  height: 40px;
+  padding: 5px;
+  border: 1px solid var(--text);
+  border-radius: 3px;
+  outline: none;
+  font-size: 1rem;
+}
+
+/*Select*/
+.selectContainer{
+  width: fit-content;
+  position: relative;
+}
+
+.checkbox{
+  display: none;
+}
+
+.checkbox:checked ~ .selectDropdown{
+  display: flex;
+}
+
+.selectedFilterContainer{
+  height: 25px;
+  background-color: var(--blue);
+  padding: 0 10px;
+  border-radius: 71px;
+  width: fit-content;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: white;
+  cursor: pointer;
+}
+
+.selectedFilterContainer:hover{
+  background-color: var(--blue-dark);
+}
+
+.selectedFilter{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  font-size: .9rem;
+}
+
+.selectDropdown{
+  position: absolute;
+  flex-direction: column;
+  top: 24px;
+  right: 10px;
+  border: 1px solid var(--blue);
+  border-radius: 3px;
+  text-transform: capitalize;
+  background-color: white;
+  display: none;
+}
+
+.option{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 10px;
+  font-size: .9rem;
+}
+
+.option:hover{
+  cursor: pointer;
+  background-color: var(--text-light);
+}

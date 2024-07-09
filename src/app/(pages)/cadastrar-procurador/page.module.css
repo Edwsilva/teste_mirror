@@ -1,0 +1,129 @@
+.contentContainer {
+  margin-bottom: 50px;
+  border-radius: 5px;
+  padding: 30px;
+  border: 1px solid var(--text);
+  box-shadow: 0 4px 4px 0 var(--text);
+  color: var(--text-dark);
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.title{
+  font-size: 1.1rem;
+  color: var(--text-dark2);
+  text-transform: uppercase;
+}
+
+.label{
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.inputsContainer{
+  display: flex;
+  gap: 100px;
+}
+
+.inputsDateContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.inputsDateContainer > div{
+  display: flex;
+  gap: 20px;
+}
+
+.inputContainer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.inputDateContainer{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.inputContainerButton{
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.select,
+.input{
+  border-radius: 4px;
+  outline: none;
+  border: 1px solid var(--text);
+  padding: 5px;
+  min-height: 29px;
+}
+
+.inputText{
+  min-width: 402.5px;
+}
+
+.inputDate{
+  color: var(--text2);
+}
+
+.inputDateSelected{
+  color: var(--black);
+}
+
+.radioContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.radioContainer > div{
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.inputRadio{
+  font-size: .95rem;
+}
+
+.inputRadioSelected{
+  color: var(--black);
+}
+
+.buttonsContainer{
+  display: flex;
+  gap: 20px;
+}
+
+@media screen and (max-width: 598px){
+  .contentContainer{
+    margin: -10px 0 30px 0;
+    padding: 0;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+  }
+
+  .inputsContainer{
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .inputText{
+    min-width: 280px;
+  }
+
+  .inputsDateContainer > div{
+    flex-direction: column;
+    gap: 10px;
+  }
+}

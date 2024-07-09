@@ -1,0 +1,39 @@
+.filterableGroup{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.empresa{ 
+    display: flex; 
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.nome{
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: var(--text-dark);
+}
+
+.subtitleContainer{
+    display: flex;
+    gap: 10px;
+    color: var(--text-dark);
+    font-size: 1rem;
+    font-weight: 400;
+    margin-bottom: 27px;
+}
+
+.cardsContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}

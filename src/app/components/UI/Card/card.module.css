@@ -1,0 +1,29 @@
+.card{
+    width: 290px;
+    padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid var(--text);
+    background-color: white;
+    border-radius: 3px;
+}
+
+.cardContainer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+
+.cardContainer > h4{
+    font-weight: 600;
+}
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--text);
+}

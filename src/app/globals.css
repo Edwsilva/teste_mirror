@@ -13,22 +13,19 @@
   --secondary-light: #45d3ad;
   --secondary-dark: #07956d;
   --text: #cccccc;
+  --text2: #c3c0c0;
   --text-light: #e6e6e6;
-  --text-dark: #999999;
-  --back: #fff;
+  --text-dark: #7b7b7b;
+  --text-dark2: #686868;
+  --error: #f41717;
+  --error-light: #f85c5c;
+  --error-dark: #c00e0e;
+  --blue: #4579fb;
+  --blue-light: #799cfc;
+  --blue-dark: #2f57c9;
+  --black: #212529;
 }
 
-html,
 body {
-  height: 100%;
-  margin: 0;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-main {
-  flex: 1;
+  background-color: var(--bg);
 }
