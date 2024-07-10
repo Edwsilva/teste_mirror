@@ -22,7 +22,7 @@
       "empresaNomeFantasia": "Burgers.rio",
       "empresaCnpj": "02.362.370/0001-02",
       "periodoInicial": "30/11/2017",
-      "periodoFinal": "30/11/2050",
+      "periodoFinal": "30/07/2024",
       "atividade": "Licenciamento da Vigilância Sanitária",
       "status": "APROVADO"
     },
@@ -35,7 +35,7 @@
       "empresaNomeFantasia": "Burgers.rio",
       "empresaCnpj": "02.362.370/0001-02",
       "periodoInicial": "30/11/2017",
-      "periodoFinal": "30/11/2050",
+      "periodoFinal": "30/07/2024",
       "atividade": "Rio Mais Fácil Negócios",
       "status": "APROVADO"
     },
@@ -87,7 +87,7 @@
       "empresaNomeFantasia": "Burgers.rio",
       "empresaCnpj": "02.362.370/0001-02",
       "periodoInicial": "30/11/2017",
-      "periodoFinal": "30/11/2050",
+      "periodoFinal": "30/07/2024",
       "atividade": "Alvará Transitório de Eventos",
       "status": "PENDENTE"
     },
@@ -139,7 +139,7 @@
       "empresaNomeFantasia": "Pizza & Cia",
       "empresaCnpj": "02.362.370/0001-02",
       "periodoInicial": "30/11/2017",
-      "periodoFinal": "30/11/2050",
+      "periodoFinal": "30/07/2024",
       "atividade": "Licenciamento da Vigilância Sanitária",
       "status": "APROVADO"
     },
@@ -230,7 +230,7 @@
       "empresaNomeFantasia": "Pizza & Cia",
       "empresaCnpj": "02.362.370/0001-02",
       "periodoInicial": "30/11/2017",
-      "periodoFinal": "30/11/2050",
+      "periodoFinal": "30/08/2024",
       "atividade": "Rio Mais Fácil Negócios",
       "status": "PENDENTE"
     },
@@ -243,7 +243,7 @@
       "empresaNomeFantasia": "Tech Innovators",
       "empresaCnpj": "12.345.678/0001-90",
       "periodoInicial": "01/01/2021",
-      "periodoFinal": "01/01/2030",
+      "periodoFinal": "30/07/2024",
       "atividade": "Alvará Transitório de Eventos",
       "status": "APROVADO"
     },
@@ -282,7 +282,7 @@
       "empresaNomeFantasia": "Green Energy",
       "empresaCnpj": "23.456.789/0001-11",
       "periodoInicial": "15/08/2020",
-      "periodoFinal": "15/08/2040",
+      "periodoFinal": "30/07/2024",
       "atividade": "Alvará Transitório de Eventos",
       "status": "PENDENTE"
     },
@@ -321,7 +321,7 @@
       "empresaNomeFantasia": "Healthy Food",
       "empresaCnpj": "45.678.901/0001-33",
       "periodoInicial": "20/03/2022",
-      "periodoFinal": "20/03/2042",
+      "periodoFinal": "30/07/2024",
       "atividade": "Alvará Transitório de Eventos",
       "status": "APROVADO"
     },

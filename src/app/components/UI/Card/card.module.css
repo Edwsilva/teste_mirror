@@ -31,3 +31,7 @@
 .subtitleAtv{
     color: var(--text-dark);
 }
+
+.dataNear{
+    color: var(--error);
+}

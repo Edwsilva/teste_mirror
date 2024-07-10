@@ -1,6 +1,7 @@
 import { FilterType, TProcuracao } from "@/app/(pages)/gerenciar-empresa/page";
 import Button from "../Button/Button";
 import styles from "./card.module.css";
+import { isDateNear } from "@/app/utils/date";
 
 type Props = {
   type: FilterType;
@@ -20,6 +21,10 @@ const Card = ({ type, data }: Props) => {
   if (type === "atividade") {
     title = data.procurador;
   }
+
+  const isPeriodoFinalNear = isDateNear(data.periodoFinal);
+
+  console.log(`IsNear ? `, isPeriodoFinalNear)
 
   return (
     <div className={styles.card}>
@@ -42,7 +47,7 @@ const Card = ({ type, data }: Props) => {
       }
       <div className={styles.cardContainer}>
         <p>{data.atividade}</p>
-        <p>{`${data.periodoInicial} até ${data.periodoFinal}`}</p>
+        <p className={`${isPeriodoFinalNear && styles.dataNear}`}>{`${data.periodoInicial} até ${data.periodoFinal}`}</p>
       </div>
       <Button type="outlined" bg="secondary">
         Excluir
