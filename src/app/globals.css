@@ -5,6 +5,7 @@
 }
 
 :root {
+  --bg: #F5F5F5;
   --primary: #02B0D6;
   --primary-light: #4ACDF0;
   --primary-dark: #0092B5;
@@ -12,8 +13,10 @@
   --secondary-light: #45D3AD;
   --secondary-dark: #07956D;
   --text: #CCCCCC;
+  --text2: #C3C0C0;
   --text-light: #E6E6E6;
   --text-dark: #7B7B7B;
+  --text-dark2: #686868;
   --error: #F41717;
   --error-light: #F85C5C;
   --error-dark: #C00E0E;
@@ -23,5 +26,6 @@
   --black: #212529;
 }
 
-
-
+body{
+  background-color: var(--bg);
+}

@@ -7,6 +7,7 @@ import styles from "./page.module.css";
 import useSWR from "swr";
 import { fetcher } from "@/api/empresas";
 import Procuracoes from "@/app/(pages)/gerenciar-empresa/Procuracoes/Procuracoes";
+import { useRouter } from "next/navigation";
 
 export type TProcuracao = {
   id: number;
@@ -36,6 +37,8 @@ const GerenciarEmpresas = () => {
   if (error) return <h1>Ocorreu um erro!</h1>;
   if (isLoading || !data) return <h1>Loading...</h1>;
 
+  const router = useRouter();
+
   const handleFilterTerm = (term: string) => {
     setFilterTerm(term);
   };
@@ -47,7 +50,7 @@ const GerenciarEmpresas = () => {
   return (
     <Container>
       <div className={styles.contentContainer}>
-        <Button bg="secondary">cadastrar procurador</Button>
+        <Button bg="secondary" props={{ onClick: () => router.push('/cadastrar-procurador') }}>cadastrar procurador</Button>
         <Filter
           handleFilterTerm={handleFilterTerm}
           handleFilterType={handleFilterType}

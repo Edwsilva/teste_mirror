@@ -70,11 +70,11 @@
 }
 
 .no-outlined_primary:hover{
-  border-color: var(--primary);
+  color: var(--primary-dark);
 }
 .no-outlined_secondary:hover{
-  border-color: var(--secondary);
+  color: var(--secondary-dark);
 }
 .no-outlined_error:hover{
-  border-color: var(--error);
+  color: var(--error-dark);
 }
